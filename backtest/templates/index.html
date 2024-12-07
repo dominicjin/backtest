@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+<h2>Enter start date and end date(eg.20180804)</h2>
+<form action="/submit" method="POST">
+    <label for="input1">start_date</label>
+    <input type="number" id="start" name="start" required><br><br>
+    
+    <label for="input2">end_date</label>
+    <input type="number" id="end" name="end" required><br><br>
+
+    <label for="input3">stock_code</label>
+    <input type="text" id="stock_code" name="stock_code" placeholder="default: 000001.SZ"><br><br>
+    
+    <input type="submit" value="submit">
+</form>
+{% endblock %}

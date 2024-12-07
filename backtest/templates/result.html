@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    result
+{% endblock %}
+
+{% block main %}
+    {% if rate > 0 %}
+        HAHA! YOU EARNED MONEY<br>
+    {% else %}
+        SO SAD! YOU LOST MONEY<br>
+    {% endif%}
+    Interest rate: {{rate}}%<br>
+    Total Value: {{total_value}}<br>
+
+    
+{% endblock %}
